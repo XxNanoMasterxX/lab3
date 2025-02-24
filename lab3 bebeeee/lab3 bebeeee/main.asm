@@ -6,7 +6,6 @@
 ;
 
 
-; Replace with your application code
 .include "M328Pdef.inc"
 .cseg
 .org 0x0000
@@ -40,8 +39,10 @@ comodicee:
 	LDI ZL, LOW(mitabla<<1)
 	LDI ZH, HIGH(mitabla<<1)
 	LPM R17, Z // Se carga el valor inicial de z hacia el port, este siendo 0.
+	LPM R23, Z
 	ldi R22, 0xff
 	eor r17, R22
+	eor r23, r22
 	out portd, r17
 
 	; Setup PCINT1
@@ -55,15 +56,22 @@ comodicee:
 
 	ldi r16, 0x00
 	out DDRC, r16 // PinC como entrada
+	sbi DDRC, 2
+	sbi DDRC, 3
 	ldi r16, 0xff
 	out DDRB, r16 // PinB como salida
 	out DDRD, r16 // PinD como salida
-	out PORTC, r16
+	sbi PORTC, 0
+	sbi PORTC, 1
+	sbi PORTC, 2
+	cbi PORTC, 3
 
 
 	ldi r18, 0x00
 	ldi r20, 0x00
 	ldi r21, 0x00
+	ldi r24, 0x00
+	ldi r25, 0x00
 
 	sei
 
@@ -101,6 +109,8 @@ in_tim:
 	RET
 
 dispe:
+	sbi PINC, 2
+	sbi PINC, 3
 	ldi r16, 100
 	OUT TCNT0, R16
 	inc r20
@@ -114,10 +124,29 @@ dispe:
 	clr r21
 	LDI ZL, LOW(mitabla<<1)
 	LDI ZH, HIGH(mitabla<<1)
+	inc r24
+	cpi r24, 0x06
+	brne ebe
+	clr r24
+	jmp minfin
+ebe:
+	inc r25
+	adiw Z, 1
+	cp r24, r25
+	brne ebe
+minfin:
+	lpm r23, Z
+	eor r23, r22
+	clr r25
+	LDI ZL, LOW(mitabla<<1)
+	LDI ZH, HIGH(mitabla<<1)
 fini:
 	lpm r17, Z
 	eor r17, R22
-	out portd, r17
+	sbis portc, 2
+	out portd, r23
+	sbis portc, 3
+	out portd, r17 
 	reti
 
 

@@ -1,0 +1,43 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\M328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\Debug\lab3 bebeeee.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>lab3 bebeeee.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>lab3 bebeeee.map</FILE>
+  <FILE>lab3 bebeeee.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <comodicee><FILE>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\main.asm</FILE><LINE>19</LINE></comodicee>
+  <elpepe><FILE>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\main.asm</FILE><LINE>82</LINE></elpepe>
+  <dispe><FILE>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\main.asm</FILE><LINE>111</LINE></dispe>
+  <mitabla><FILE>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\main.asm</FILE><LINE>26</LINE></mitabla>
+  <in_tim><FILE>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\main.asm</FILE><LINE>104</LINE></in_tim>
+  <loop><FILE>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\main.asm</FILE><LINE>78</LINE></loop>
+  <incre><FILE>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\main.asm</FILE><LINE>89</LINE></incre>
+  <decre><FILE>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\main.asm</FILE><LINE>96</LINE></decre>
+  <DELAY><FILE>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\main.asm</FILE><LINE>154</LINE></DELAY>
+  <fini><FILE>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\main.asm</FILE><LINE>143</LINE></fini>
+  <ebe><FILE>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\main.asm</FILE><LINE>132</LINE></ebe>
+  <minfin><FILE>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\main.asm</FILE><LINE>137</LINE></minfin>
+  <SUBDELAY1><FILE>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\main.asm</FILE><LINE>156</LINE></SUBDELAY1>
+  <SUBDELAY2><FILE>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\main.asm</FILE><LINE>161</LINE></SUBDELAY2>
+  <SUBDELAY3><FILE>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\main.asm</FILE><LINE>166</LINE></SUBDELAY3>
+  <SUBDELAY4><FILE>C:\Users\laloj\Documents\lab3\lab3 bebeeee\lab3 bebeeee\main.asm</FILE><LINE>171</LINE></SUBDELAY4>
+ </LABELS>
+</ASSEMBLER_INFO>
